@@ -73,6 +73,9 @@ export const createPrismaRedisCache = ({
             },
             async function modelsFetch({ cb, params }: { cb: FetchFromPrisma; params: MiddlewareParams }) {
               result = await cb(params);
+              if (transformer) {
+                return transformer.serialize(result);
+              }
 
               return result;
             },
@@ -103,6 +106,9 @@ export const createPrismaRedisCache = ({
           async function modelFetch({ cb, params }: { cb: FetchFromPrisma; params: MiddlewareParams }) {
             result = await cb(params);
 
+            if (transformer) {
+              return transformer.serialize(result);
+            }
             return result;
           },
         );
