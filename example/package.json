@@ -19,18 +19,18 @@
     "prisma:migrate:dev": "prisma migrate dev"
   },
   "dependencies": {
-    "ioredis": "5.3.1",
-    "pino": "8.11.0",
-    "prisma": "4.11.0",
-    "prisma-redis-middleware": "4.6.1"
+    "ioredis": "5.3.2",
+    "pino": "8.14.1",
+    "prisma": "4.14.1",
+    "prisma-redis-middleware": "4.7.0"
   },
   "devDependencies": {
-    "@prisma/client": "4.11.0",
+    "@prisma/client": "4.14.1",
     "@types/ioredis": "4.28.10",
-    "@types/node": "18.15.10",
+    "@types/node": "18.16.12",
     "nodemon": "2.0.22",
-    "rimraf": "4.4.1",
+    "rimraf": "5.0.1",
     "ts-node": "10.9.1",
-    "typescript": "5.0.2"
+    "typescript": "5.0.4"
   }
 }
